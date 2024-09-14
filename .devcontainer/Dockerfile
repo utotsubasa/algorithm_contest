@@ -2,6 +2,7 @@ FROM mcr.microsoft.com/devcontainers/cpp:1-ubuntu-24.04
 
 ARG REINSTALL_CMAKE_VERSION_FROM_SOURCE="none"
 
+USER root
 # Optionally install the cmake for vcpkg
 COPY ./reinstall-cmake.sh /tmp/
 
